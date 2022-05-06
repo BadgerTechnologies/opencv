@@ -7,6 +7,9 @@ BUILDDIR = obj-$(DEB_HOST_MULTIARCH)
 
 CMAKE_ARCH_FLAGS :=
 
+CXXFLAGS=-O3 -DNDEBUG
+CFLAGS=-O3 -DNDEBUG
+
 # Comply with Debian architectures baseline.
 # See cmake/OpenCVCompilerOptimizations.cmake for a list of known features.
 # Reference: https://github.com/opencv/opencv/wiki/CPU-optimizations-build-options
